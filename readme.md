@@ -30,7 +30,7 @@ During the gameplay, the resulted model is used to recognize the hand gesture of
 
 ## Demo
 
-### `Prepare the train model` 
+### Prepare the train model
 Open the "train_model.ipynb". 
 
 Run all the cells in order.
@@ -39,7 +39,7 @@ If you run all the cells, you would get best_model.pth.
 
 ※You don't need to do this process every time.
 
-### `Play the Rock-Paper-Scissors game ` 
+### Play the Rock-Paper-Scissors game 
 Open the "test_game.ipynb". 
 
 Run all the cells in order.
@@ -50,8 +50,9 @@ You can play the Rock-Paper-Scissors game.
 
 If you want to get good results, take the following pose.
 
+Rock
 ![rock.png](img/rock.png)
-
+Paper
 ![paper.png](img/paper.png)
-
+Scissors
 ![scissors.png](img/scissors.png)
