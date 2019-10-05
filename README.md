@@ -47,6 +47,10 @@ During the gameplay, the trained model is used to recognize the hand gesture of 
 
 This folders contain the images used to train the network.
 
+### `development_codes`
+This folder contains testing codes in the development phase.
+
+
 ## Enhancing Recognition Results
 ### (For now)
 If you want to get good hand gesture recognition results, the following poses are recommended.
