@@ -49,12 +49,10 @@ You can play the Rock-Paper-Scissors game after you run the last cell.
 ### (For now)
 If you want to get good hand gesture recognition results, the following poses are recommended.
 
-#### Rock
-![rock.png](img/rock.png)
-#### Paper
-![paper.png](img/paper.png)
-#### Scissors
-![scissors.png](img/scissors.png)
+#### Rock, Paper, Scissors from left to right
+<img src="img/rock.png" width="300">
+<img src="img/paper.png" width="300">
+<img src="img/scissors.png" width="300">
 
 ### Further development
 
