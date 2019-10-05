@@ -51,8 +51,10 @@ If you want to get good hand gesture recognition results, the following poses ar
 
 #### Rock
 <img src="img/rock.png" width="600">
+
 #### Paper
 <img src="img/paper.png" width="600">
+
 #### Scissors
 <img src="img/scissors.png" width="600">
 
