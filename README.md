@@ -20,7 +20,7 @@ You can play the Rock-Paper-Scissors game after you run the last cell.
 
 ![game.png](img/game.png)
 
-## Purpose of each Files and Folders
+## Purpose of each of the Files and Folders
 
 ### `collection.ipynb`
 Data collection for the rock-paper-scissor hand gestures.
