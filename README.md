@@ -45,6 +45,8 @@ You can play the Rock-Paper-Scissors game after you run the last cell.
 
 ![game.png](img/game.png)
 
+## Enhancing Recognition Results
+### (For now)
 If you want to get good hand gesture recognition results, the following poses are recommended.
 
 #### Rock
@@ -53,3 +55,12 @@ If you want to get good hand gesture recognition results, the following poses ar
 ![paper.png](img/paper.png)
 #### Scissors
 ![scissors.png](img/scissors.png)
+
+### Further development
+
+1. Collecting more data to train the network would certainly improve
+    the accuracy of the network. 
+    - different environments and lighting
+    - different colors
+    - use a better camera
+2. We use Alexnet for the recognition. Choosing a more suited network may help.
