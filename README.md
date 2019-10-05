@@ -14,12 +14,14 @@ Data collection for the rock-paper-scissor hand gestures.
 Train the model with the data collected.
 
 ### `test_game.ipynb`
-Code for actual gameplay process. This code is a simplification of game.ipynb. When you cloned this repository, you sholud try first.
+Code for testing gameplay process. This code is a simplified version of `game.ipynb`, the GPIO part indicating the device's choice of Rock/Paper/Scissor is removed. 
+
+Try running this file before `game.ipynb` when you clone this project.
 
 ### `game.ipynb`
 Code for actual gameplay process, including GPIO lights and buttons. 
 
-During the gameplay, the resulted model is used to recognize the hand gesture of the player.
+During the gameplay, the trained model is used to recognize the hand gesture of the player.
 
 ### Table for meanings of folder names
 >| Category | Meaning |
