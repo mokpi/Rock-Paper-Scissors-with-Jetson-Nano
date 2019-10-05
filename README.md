@@ -4,7 +4,23 @@
 ![poster.png](img/poster.png)
 You can try to play the **Rock-Paper-Scissors game with a Jetson Nano**! 
 
-## Files
+## Demo
+
+### 1. Prepare the trained model
+Open `train_model.ipynb` and run all the cells in order.
+
+If you run all the cells, you should get `best_model.pth` file, this file will be used as the model to recognize hand gesture.
+
+※ You don't need to do this process every time.
+
+### 2. Play the Rock-Paper-Scissors game 
+Open `test_game.ipynb` and run all the cells in order.
+
+You can play the Rock-Paper-Scissors game after you run the last cell. 
+
+![game.png](img/game.png)
+
+## Purpose of each Files and Folders
 
 ### `collection.ipynb`
 Data collection for the rock-paper-scissor hand gestures.
@@ -29,21 +45,7 @@ During the gameplay, the trained model is used to recognize the hand gesture of 
 >| two | Paper |
 >| three | Scissor |
 
-## Demo
-
-### 1. Prepare the trained model
-Open `train_model.ipynb` and run all the cells in order.
-
-If you run all the cells, you should get `best_model.pth` file, this file will be used as the model to recognize hand gesture.
-
-※ You don't need to do this process every time.
-
-### 2. Play the Rock-Paper-Scissors game 
-Open `test_game.ipynb` and run all the cells in order.
-
-You can play the Rock-Paper-Scissors game after you run the last cell. 
-
-![game.png](img/game.png)
+This folders contain the images used to train the network.
 
 ## Enhancing Recognition Results
 ### (For now)
