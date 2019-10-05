@@ -6,7 +6,7 @@ You can try to play the **Rock-Paper-Scissors game with a Jetson Nano**!
 
 ## Demo
 
-### 0. Clone files onto your Jetson Nano
+### 0. Clone files onto your Jetson Nano, connect to Jetson Nano through USB and through Jupyter.
 
 ### 1. Prepare the trained model
 Open `train_model.ipynb` and run all the cells in order.
