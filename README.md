@@ -4,6 +4,13 @@
 ![poster.png](img/poster.png)
 You can try to play the **Rock-Paper-Scissors game with a Jetson Nano**! 
 
+## Dependencies
+
+1. numpy
+2. pyTorch
+3. colorama: only for coloring the text outputted on the screen.
+4. ...
+
 ## Demo
 
 ### 0. Clone files onto your Jetson Nano, connect to Jetson Nano through USB and through Jupyter.
