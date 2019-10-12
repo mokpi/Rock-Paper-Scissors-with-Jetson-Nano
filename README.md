@@ -25,7 +25,7 @@ You can try to play the **Rock-Paper-Scissors game with a Jetson Nano**!
     
 5. Power the JetBot by plugging in the power supply. 
 6. Wait a bit for JetBot to boot.
-     - After booting, the IP addresses will be as follows: 
+     After booting, the IP addresses will be as follows: 
 	- JetBot: `192.168.55.1`
 	- PC: `192.168.55.100`
     
