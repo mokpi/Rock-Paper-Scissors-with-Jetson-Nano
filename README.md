@@ -4,30 +4,78 @@
 ![poster.png](img/poster.png)
 You can try to play the **Rock-Paper-Scissors game with a Jetson Nano**! 
 
-## Dependencies
+## Setup Guide
 
-1. numpy
-2. pyTorch
-3. colorama: only for coloring the text outputted on the screen.
-4. ...
+### Step 1 - Flash JetBot image onto SD card
+1.  Download the expandable JetBot SD card image `jetbot_image_xxxxxx.zip`
+     > For the JetBot SD card image, see the link here: https://github.com/NVIDIA-AI-IOT/jetbot/wiki/software-setup
+     
+2.  Insert an SD card into your desktop machine
+3.  Using [Etcher](https://www.balena.io/etcher/), select the `jetbot_image_xxxxxx.zip` image and flash it onto the SD card
+4.  Remove the SD card from your desktop machine
 
-## Demo
+### Step 2 - Connect to JetBot from web browser
+1. Do not plug in your HDMI monitor, USB keyboard, mouse for the Jetson Nano
+2. Put the SD card prepared in the last section into the Jetson Nano.
 
-### 0. Clone files onto your Jetson Nano, connect to Jetson Nano through USB and through Jupyter.
+3. Plug in the camera module to Jetson Nano.
 
-### 1. Prepare the trained model
-Open `train_model.ipynb` and run all the cells in order.
+4. Connection Jetson Nano to your desktop through micro-USB. 
+	![Micro-USB plug](https://faboplatform.github.io/JetbotDocs/02.%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E8%A8%AD%E5%AE%9A/img/net002.png)
+    
+5. Power the JetBot by plugging in the power supply. 
+6. Wait a bit for JetBot to boot.
+     After booting, the IP addresses will be as follows: 
+	JetBot: `192.168.55.1`
+	PC: `192.168.55.100`
+    
+7. Navigate to `http://192.168.55.1:8888` from your desktop's web browser
 
-If you run all the cells, you should get `best_model.pth` file, this file will be used as the model to recognize hand gesture.
+8. Enter `jetbot` as the password to log into Jupyter.
 
-※ You don't need to do this process every time.
+### Step 3 - Connect to Wi-Fi
+1. Open a new terminal page in Jupyter.
 
-### 2. Play the Rock-Paper-Scissors game 
-Open `test_game.ipynb` and run all the cells in order.
+2. Show the list of available networks.
+```
+nmcli device wifi list
+```
 
-You can play the Rock-Paper-Scissors game after you run the last cell. 
+3. Connect to the network
+```
+sudo nmcli device wifi connect '<SSID>' password '<PASSWORD>' ifname wlan0
+```
+4. Check the IP address of Jetson Nano
+```
+ifconfig -a
+```
 
-![game.png](img/game.png)
+### Step 4 - Install dependencies
+#### jetcam
+```
+git clone https://github.com/NVIDIA-AI-IOT/jetcam.git
+cd jetcam
+sudo python3 setup.py install
+```
+#### colorama (For colored text output)
+```
+pip3 install colorama
+```
+### Step 5 - Set up the Project and Play! (Using precollected data)
+1. Clone the project
+```
+cd ~
+git clone https://github.com/mokpi/Rock-Paper-Scissors-with-Jetson-Nano.git
+```
+
+2. Open `train_model.ipynb` and run all the cells in order. 
+	You will obtain the file `best_model.pth` after the notebook is completely run, this file will be used as the model to recognize hand gestures. 
+	(If the last cell produce 30 lines of output, then the cell is completely run. )
+    You don't need to do this process every time, after you have already obtained the model.
+	
+3. Open `test_game.ipynb` and run all the cells in order. 
+    You can play the Rock-Paper-Scissors game after you run the last cell. 
+    ![game.png](img/game.png)
 
 ## Purpose of each of the Files and Folders
 
