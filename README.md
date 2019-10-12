@@ -82,8 +82,12 @@ git clone https://github.com/mokpi/Rock-Paper-Scissors-with-Jetson-Nano.git
 ### `collection.ipynb`
 Data collection for the rock-paper-scissor hand gestures.
 
+This is the first stage of the project. 
+
 ### `train_model.ipynb`
 Train the model with the data collected.
+
+This is the second stage of the project. 
 
 ### `test_game.ipynb`
 Code for testing gameplay process. This code is a simplified version of `game.ipynb`, the GPIO part indicating the device's choice of Rock/Paper/Scissor is removed. 
@@ -94,6 +98,8 @@ Try running this file before `game.ipynb` when you clone this project.
 Code for actual gameplay process, including GPIO lights and buttons. 
 
 During the gameplay, the trained model is used to recognize the hand gesture of the player.
+
+This is the final stage of the project. 
 
 ### Folders inside `dataset`
 >| Category (Folder Name) | Meaning |
