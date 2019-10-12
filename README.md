@@ -69,9 +69,10 @@ git clone https://github.com/mokpi/Rock-Paper-Scissors-with-Jetson-Nano.git
 ```
 
 2. Open `train_model.ipynb` and run all the cells in order. 
-	You will obtain the file `best_model.pth` after the notebook is completely run, this file will be used as the model to recognize hand gestures. 
-	(If the last cell produce 30 lines of output, then the cell is completely run. )
-    You don't need to do this process every time, after you have already obtained the model.
+    - You will obtain the file `best_model.pth` after the notebook is completely run, this file will be used as the model to recognize hand gestures. 
+    - If the last cell produce 30 lines of output, then the cell is completely run. 
+    - First time running cell #5 may cause the program to download the pretrained model of alexnet from pytorch.com (around 233MB)
+    - You don't need to do this process every time, after you have already obtained the model.
 	
 3. Open `test_game.ipynb` and run all the cells in order. 
     You can play the Rock-Paper-Scissors game after you run the last cell. 
