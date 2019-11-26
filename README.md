@@ -1,6 +1,8 @@
 
 # Rock-Paper-Scissors with Jetson Nano
 
+(If you have any questions, you can post it on https://devtalk.nvidia.com/default/topic/1064362/jetson-projects/rock-paper-scissors-with-jetson-nano/.)
+
 ![poster.png](img/poster.png)
 You can try to play the **Rock-Paper-Scissors game with a Jetson Nano**! 
 
@@ -60,6 +62,12 @@ sudo python3 setup.py install
 #### colorama (For colored text output)
 ```
 pip3 install colorama
+```
+Alternatively, you can install from source code:
+```
+git clone https://github.com/tartley/colorama.git
+cd colorama
+sudo python3 setup.py install
 ```
 ### Step 5 - Set up the Project and Play! (Using precollected data)
 1. Clone the project
